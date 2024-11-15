@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 90deg, #00dbde 0%, #fc00ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain{
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header{
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+}
+
+.form{
+    padding: 10px;
+}
+
+.form-control{
+    position: relative;
+    padding: 10px;
+}
+
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+
+    padding: 10px;
+
+    border:2px solid #f0f0f0 ;
+    border-radius: 10px;
+}
+
+.form-control i span{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 10;
+    left: 10;
+    visibility: hidden;
+}
+
+.btt{
+    width: 100%;
+    padding: 10px;
+    background-color: #e220e6c5;
+    border: none;
+    border-radius: 10px;
+}
+
+/*Errro Sucesso*/
+
+.form-control.erro input{
+    border-color: #e74c3c;
+}
+
+.form-control.sucess input{
+    border-color: #2ecc71;
+}
+
+.form-control.sucess > i.check_circle > span{
+    border-color: #2ecc71;
+    visibility: visible;
+}
