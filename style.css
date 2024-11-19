@@ -18,6 +18,7 @@ body{
 
 .contain{
     width: 90%;
+    height: 600px;
     background-color: white;
     border-radius: 10px;
 }
@@ -35,6 +36,7 @@ body{
 .form-control{
     position: relative;
     padding: 10px;
+    margin: 10px;
 }
 
 
@@ -48,28 +50,29 @@ body{
     width: 100%;
 
     padding: 10px;
-
+    
     border:2px solid #f0f0f0 ;
     border-radius: 10px;
 }
 
-.form-control i span{
+.form-control i {
     position: absolute;
-    top: 70%;
-    right: 10%;
+    top: 57%;
+    right: 5%;
     visibility: hidden;
 }
 
 .form-control small{
     position: absolute;
-    bottom: 10;
-    left: 10;
+    bottom: -7%;
+    left: 5%;
     visibility: hidden;
 }
 
 .btt{
     width: 100%;
     padding: 10px;
+    margin: auto;
     background-color: #e220e6c5;
     border: none;
     border-radius: 10px;
@@ -80,12 +83,20 @@ body{
 .form-control.erro input{
     border-color: #e74c3c;
 }
+.form-control.erro .error{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.erro small{
+    color: #e74c3c;
+    visibility: visible;
+}
 
 .form-control.sucess input{
     border-color: #2ecc71;
 }
 
-.form-control.sucess > i.check_circle > span{
-    border-color: #2ecc71;
+.form-control.sucess .check_circle {
+    color: #2ecc71;
     visibility: visible;
 }

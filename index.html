@@ -13,7 +13,7 @@
 
         <form id="form" class="form">
 
-            <div class="form-control erro">
+            <div class="form-control">
                 <label for="username">Nome de usuario</label>
                 <input type="text" id="username" name="username" placeholder="Digite seu nome de usuario...">
                 <i  class=" error">
@@ -25,13 +25,13 @@
                 <small>Mensagen de erro!</small>
             </div>
 
-            <div class="form-control sucess">
+            <div class="form-control">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu endereço email...">
-                <i >
+                <i class=" error">
                     <span class="material-symbols-outlined">error</span>
                 </i>
-                <i >
+                <i class="check_circle">
                     <spanv class="material-symbols-outlined">
                         check_circle
                     </span>
@@ -42,29 +42,39 @@
             <div class="form-control">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua Senha...">
-                <i class="material-symbols-outlined">
-                    error
+                <i class=" error">
+                    <span class="material-symbols-outlined">error</span>
                 </i>
-                <i class="material-symbols-outlined">
-                    check_circle
+                <i class="check_circle">
+                    <spanv class="material-symbols-outlined">
+                        check_circle
+                    </span>
                 </i>
                 <small>Mensagen de erro!</small>
+            </div>
+
             </div>
 
             <div class="form-control">
                 <label for="password-confimation">Confirme sua senha</label>
                 <input type="password" id="password-confimation" name="password-confimation" placeholder="Digite sua senha novamente...">
-                <i class="material-symbols-outlined">
-                    error
+                <i class=" error">
+                    <span class="material-symbols-outlined">error</span>
                 </i>
-                <i class="material-symbols-outlined">
-                    check_circle
+                <i class="check_circle">
+                    <spanv class="material-symbols-outlined">
+                        check_circle
+                    </span>
                 </i>
                 <small>Mensagen de erro!</small>
             </div>
 
-            <input type="submit" value="Enviar" class="btt">
+            </div>
+
+                <input type="submit" value="Enviar" class="btt">
+
         </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
